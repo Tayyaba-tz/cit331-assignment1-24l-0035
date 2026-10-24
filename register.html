@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Infinite Lives Horizon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="club-name">Infinite Lives Horizon</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html" class="active">Register</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h1>Register for an Event</h1>
+      <p>Fill in the form below to reserve your place.</p>
+
+      <form id="registration-form" action="#" method="post">
+        <fieldset>
+          <legend>Your details</legend>
+
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="fullName" placeholder="e.g. Tayyaba Zubaid" required minlength="3"
+            maxlength="60">
+
+          <label for="email">University email</label>
+          <input type="email" id="email" name="email" placeholder="name@university.edu.pk" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="03001234567" pattern="[0-9]{11}"
+            title="Enter 11-digit phone number, digits only" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Event</legend>
+
+          <label for="event-choice">Choose an event</label>
+          <select id="event-choice" name="eventChoice" required>
+            <option value="">-- Select an event --</option>
+            <option value="Freshers' Game Night">Freshers' Game Night (7 Nov)</option>
+            <option value="Football Tournament">Football Tournament (14 Nov)</option>
+            <option value="Retro Games Marathon">Retro Games Marathon (21 Nov)</option>
+            <option value="Game Design Talk">Game Design Talk (5 Dec)</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+
+          <input type="radio" id="hear-friend" name="hearAbout" value="A friend" required>
+          <label for="hear-friend">A friend</label>
+
+          <input type="radio" id="hear-social" name="hearAbout" value="Social media">
+          <label for="hear-social">Social media</label>
+
+          <input type="radio" id="hear-poster" name="hearAbout" value="Campus poster">
+          <label for="hear-poster">Campus poster</label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="confirmation" role="status"></p>
+    </section>
+
+    <section>
+      <h2>Saved Registrations</h2>
+      <p id="empty-message">No registrations yet.</p>
+      <ul id="registration-list"></ul>
+      <button type="button" id="clear-all">Clear all</button>
+    </section>
+
+    <aside class="contact-box">
+      <h2>Contact the Committee</h2>
+      <p>Trouble registering? Email <a href="mailto:gamingclub@example.edu.pk">gamingclub@example.edu</a>.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Infinite Lives Horizon. Built for CIT331.</p>
+  </footer>
+</body>
+
+</html>
