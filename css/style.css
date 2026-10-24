@@ -1,0 +1,66 @@
+/* ---------- Colour palette (variables) ---------- */
+:root {
+    --bg: #f5f7fb;
+    --text: #1a1a2e;
+    --card: #ffffff;
+    --border: #c9cfe0;
+    --accent: #5b2fd6;
+    --accent-text: #ffffff;
+    --header-bg: #1a1a2e;
+    --header-text: #ffffff;
+    --highlight: #ffd166;
+}
+
+/* ---------- Box model and base typography ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* element selector */
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+    /* grouping selector */
+    line-height: 1.25;
+    margin: 0 0 0.75rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.65rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    /* pseudo-class */
+    text-decoration: none;
+}
+
+a[href^="https"] {
+    /* attribute selector */
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
