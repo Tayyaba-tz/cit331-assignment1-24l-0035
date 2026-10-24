@@ -205,3 +205,111 @@ figcaption {
     border-radius: 8px;
     background-color: var(--card);
 }
+
+/* ---------- Form ---------- */
+fieldset {
+    margin: 0 0 1.25rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--card);
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 0.75rem 0 0.25rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    max-width: 28rem;
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input[type="radio"] {
+    margin-right: 0.4rem;
+}
+
+fieldset input[type="radio"]+label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent);
+    color: var(--accent-text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #3f1d9e;
+}
+
+#confirmation {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#registration-list {
+    padding-left: 1.25rem;
+}
+
+#registration-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ---------- Responsive design ---------- */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    #main-content {
+        padding: 1rem;
+    }
+
+    .event-card {
+        flex-basis: 100%;
+    }
+}
