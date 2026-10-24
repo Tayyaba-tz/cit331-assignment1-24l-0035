@@ -17,7 +17,6 @@
 }
 
 body {
-    /* element selector */
     margin: 0;
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
@@ -29,7 +28,6 @@ body {
 h1,
 h2,
 h3 {
-    /* grouping selector */
     line-height: 1.25;
     margin: 0 0 0.75rem;
 }
@@ -51,12 +49,10 @@ a {
 }
 
 a:hover {
-    /* pseudo-class */
     text-decoration: none;
 }
 
 a[href^="https"] {
-    /* attribute selector */
     font-weight: bold;
 }
 
