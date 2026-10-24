@@ -60,3 +60,148 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* ---------- Accessibility ---------- */
+a:focus,
+input:focus,
+select:focus,
+button:focus {
+    outline: 3px solid var(--highlight);
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--highlight);
+    color: #1a1a2e;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* ---------- Header and navigation (Flexbox) ---------- */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+.club-name {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+nav>a {
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    border-color: var(--highlight);
+}
+
+nav a.active {
+    background-color: var(--highlight);
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+/* ---------- Main content ---------- */
+#main-content {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+.hero {
+    padding: 2rem;
+    border-left: 6px solid var(--accent);
+    border-radius: 8px;
+    background-color: var(--card);
+}
+
+.tagline {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* ---------- Event cards (Flexbox) ---------- */
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.events h2 {
+    flex: 0 0 100%;
+}
+
+.event-card {
+    flex: 1 1 16rem;
+    margin: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--card);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.featured .event-card {
+    border-left: 6px solid var(--accent);
+}
+
+/* ---------- Figure and aside ---------- */
+figure {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--card);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.contact-box {
+    padding: 1rem 1.25rem;
+    border: 2px dashed var(--accent);
+    border-radius: 8px;
+    background-color: var(--card);
+}
