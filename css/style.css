@@ -313,3 +313,28 @@ footer p {
         flex-basis: 100%;
     }
 }
+
+/* ---------- Bonus: dark colour scheme ---------- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #12121c;
+        --text: #eaeaf5;
+        --card: #1e1e2e;
+        --border: #3a3a52;
+        --accent: #b9a2ff;
+        --accent-text: #12121c;
+        --header-bg: #0a0a12;
+    }
+
+    button:hover {
+        background-color: #d3c4ff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        background-color: var(--card);
+        color: var(--text);
+    }
+}
